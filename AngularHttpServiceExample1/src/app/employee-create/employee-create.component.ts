@@ -1,11 +1,13 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { EmployeeService } from '../shared/employee.service';
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-employee-create',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, FormsModule],
   templateUrl: './employee-create.component.html',
   styleUrl: './employee-create.component.scss'
 })
